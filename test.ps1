@@ -1,7 +1,5 @@
-param(
-    [string]$Message = "Привет! Это сообщение по умолчанию.",
-    [string]$Title = "Мое сообщение"
-)
+# Тестовый скрипт для запуска из C++ софта
+Write-Host "Hello from PowerShell! Скрипт успешно запущен вашим софтом." -ForegroundColor Green
 
-Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.MessageBox]::Show($Message, $Title)
+# Опционально: Пауза для видимости вывода (если не detached)
+Read-Host "Нажмите Enter для выхода"
